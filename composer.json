@@ -1,0 +1,8 @@
+{
+    "name": "dell/parents",
+    "description": "Parents Dashboard",
+    "type": "library",
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.28"
+    }
+}

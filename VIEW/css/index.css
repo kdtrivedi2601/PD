@@ -1,0 +1,71 @@
+.header{
+    Background-color : skyblue;
+}
+.body{
+    Background-color : white;
+}
+.image-gallery {
+    display: flex;
+    overflow: hidden;
+    width: 100%; /* Set the width of the gallery container */
+    height: 100%; /* Set the height of the gallery container */
+    margin: 0 auto; /* Center the gallery container horizontally */
+    position: relative;
+}
+
+.image-gallery img {
+    width: 600px; /* Set the width of the images */
+    height: 300px; /* Set the height of the images */
+    object-fit: cover; /* Ensure images fill the entire container */
+}
+
+.image-gallery .slider {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: slide 10s infinite; /* Set the duration and timing of the animation */
+}
+
+.image-gallery .slider img {
+    flex-shrink: 0;
+    width: 600px; /* Set the width of the images */
+    height: 300px; /* Set the height of the images */
+    object-fit: cover; /* Ensure images fill the entire container */
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0); /* Start the animation with no movement */
+    }
+
+    20% {
+        transform: translateX(0); /* Pause for a brief moment before continuing */
+    }
+
+    25% {
+        transform: translateX(-600px); /* Move the slider to the left */
+    }
+
+    45% {
+        transform: translateX(-600px); /* Pause for a brief moment before continuing */
+    }
+
+    50% {
+        transform: translateX(-1200px); /* Move the slider to the left again */
+    }
+
+    70% {
+        transform: translateX(-1200px); /* Pause for a brief moment before continuing */
+    }
+
+    75% {
+        transform: translateX(-1200px); /* Move the slider to the left a final time */
+    }
+
+    100% {
+        transform: translateX(-1200px); /* End the animation with no movement */
+    }
+}

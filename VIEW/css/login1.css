@@ -1,0 +1,87 @@
+.Login{
+  display: none; 
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+   background-color: white;
+}
+
+/* Main container */
+.main_class {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #00a6c0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+#title {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Radio buttons */
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Form inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: 2px solid rgb(85, 169, 169);
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  /* border: none; */
+  margin-bottom: 20px;
+}
+
+/* Login buttons */
+/* Login buttons */
+input[type="submit"] {
+  background-color: #090909;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #1dd4e5;
+}
+
+
+/* Signup button */
+a[href="./signup.php"] button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+a[href="./signup.php"] button:hover {
+  background-color: #218838;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
